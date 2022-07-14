@@ -1,0 +1,91 @@
+/* Form and Text format */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+a,
+h1,
+h2,
+.contract-text ol,
+li,
+p {
+    color: white;
+}
+
+body {
+    margin: 0;
+    background-color: #001117;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Back button */
+
+.back-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    min-width: 60px;
+    height: 100%;
+    background-color: #001117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.back-button:hover,
+.back-button:focus {
+    background-color: #1BF966;
+    -webkit-box-shadow: 0px 0px 27px #1BF966;
+    -moz-box-shadow: 0px 0px 27px #1BF966;
+    box-shadow: 0px 0px 27px #1BF966;
+    color: #001117;
+
+}
+
+.back-button-item {
+    letter-spacing: 5px;
+    color: inherit;
+    font-weight: 700;
+}
+
+/* Contract */
+
+.contract-main {
+    display: flex;
+}
+
+.contract-text {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 30px;
+}
+
+.contract-text ol,
+li {
+    text-align: left;
+    margin: 10px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+span {
+    font-weight: 700;
+}
+
+.important {
+    background-color: #1BF966;
+    color: #001117;
+    border-radius: 1em;
+    padding: 0px 0.5%;
+}
+
+iframe {
+    height: 100vh;
+    width: 100%;
+}

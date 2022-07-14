@@ -1,0 +1,201 @@
+a,
+h1,
+h2,
+p {
+  color: white;
+  margin: 0;
+}
+
+#InventoryId:focus {
+  outline: none;
+}
+
+a,
+h1,
+h2,
+p,
+button,
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+#InventoryId {
+  background-color: #001117;
+}
+
+a,
+input {
+  text-decoration: none;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.terminal {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 5%;
+  width: 54px;
+  height: 54px;
+}
+
+.qr {
+  margin: auto auto 25px;
+  display: none;
+}
+
+.phone {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+/* =========form start========= */
+
+.formId {
+  margin-bottom: 22px;
+}
+
+#InventoryId {
+  border-radius: 100vh;
+  border: 2px solid white;
+  width: 15em;
+  height: 3em;
+  text-align: center;
+}
+
+#InventoryId:hover {
+  border-color: #bababa;
+}
+
+#InventoryId:focus {
+  border-color: #1BF966;
+  box-shadow: 0px 0px 5px #1BF966;
+}
+
+
+
+#InventoryId::placeholder,
+#InventoryId {
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+}
+
+.js-button {
+  display: none;
+}
+
+.button-success {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  width: 10em;
+  height: 2.5em;
+  color: white;
+  border-radius: 10vh;
+  border: none;
+  background: linear-gradient(165deg, #49EBF5, #04DB19);
+}
+
+.pure-group {
+  margin: auto;
+  border: none;
+  width: 301px;
+  height: 61px;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+/* =========Card start========= */
+
+.card-content {
+  display: flex;
+}
+
+.card {
+  margin: 0px 21px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.036);
+  background: linear-gradient(140.61deg, rgba(237, 239, 255, 0.081) -4.29%, rgba(237, 239, 255, 0.1) 53.86%, rgba(99, 100, 111, 0) 99.27%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 346px;
+  height: 226px;
+}
+
+.card__head {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.card__description {
+  margin: 15px 28px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.card__button {
+
+  position: absolute;
+  margin-top: 225px;
+  background-color: white;
+  padding: 17px 27px;
+  border-radius: 1.3vh;
+
+  color: black;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+
+.card__button:hover {
+  box-shadow: 0px 2px 20px #1BF966;
+}
+
+
+
+/* card end */
+
+/* media */
+
+@media (max-width: 1164px) {
+  .card-content {
+    display: block;
+  }
+
+  .card {
+    margin-top: 50px;
+  }
+
+  /* .logo {
+    margin: auto;
+  } */
+
+  .phone {
+    margin-top: 20%;
+  }
+}
