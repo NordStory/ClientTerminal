@@ -6,7 +6,7 @@ p {
   margin: 0;
 }
 
-#InventoryId:focus {
+#Inventory_Id:focus {
   outline: none;
 }
 
@@ -20,7 +20,7 @@ input {
 }
 
 body,
-#InventoryId {
+#Inventory_Id {
   background-color: #001117;
 }
 
@@ -65,7 +65,7 @@ input {
   margin-bottom: 22px;
 }
 
-#InventoryId {
+#Inventory_Id {
   border-radius: 100vh;
   border: 2px solid white;
   width: 15em;
@@ -73,19 +73,19 @@ input {
   text-align: center;
 }
 
-#InventoryId:hover {
+#Inventory_Id:hover {
   border-color: #bababa;
 }
 
-#InventoryId:focus {
+#Inventory_Id:focus {
   border-color: #1BF966;
   box-shadow: 0px 0px 5px #1BF966;
 }
 
 
 
-#InventoryId::placeholder,
-#InventoryId {
+#Inventory_Id::placeholder,
+#Inventory_Id {
   color: white;
   font-weight: 300;
   font-size: 1em;
