@@ -1,3 +1,12 @@
+:root {
+  /* --transition: all 10s ease-in-out; */
+  --transition: all 0.3s ease-in-out;
+}
+
+* {
+  z-index: 1;
+}
+
 a,
 h1,
 h2,
@@ -47,18 +56,6 @@ input {
   height: 54px;
 }
 
-.qr {
-  margin: auto auto 25px;
-  display: none;
-}
-
-.phone {
-  font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 5%;
-}
-
 /* =========form start========= */
 
 .formId {
@@ -92,12 +89,20 @@ input {
   letter-spacing: 0.5px;
 }
 
-.js-button {
-  display: none;
+.buttonOff {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.buttonIn {
+  max-height: 45px;
+  opacity: 1;
+  transition: var(--transition);
 }
 
 .button-success {
-
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -118,9 +123,49 @@ input {
   height: 61px;
 }
 
-.honeypot-field {
-  display: none;
+/* =========Spheree========= */
+
+.spheree {
+  position: absolute;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 0;
+  overflow: hidden;
 }
+
+.green,
+.purple,
+.blue {
+  width: 623px;
+  height: 623px;
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
+.blue {
+  background-color: #0094FF;
+  position: fixed;
+  left: -311px;
+  top: -311px;
+}
+
+.purple {
+  background-color: #AF21E1;
+  position: fixed;
+  left: -311px;
+  bottom: -311px;
+}
+
+.green {
+  background-color: #21E175;
+  position: fixed;
+  right: -311px;
+  bottom: -311px;
+}
+
+/* .mouse-parallax {
+  transition: all 0.1s ease;
+} */
 
 /* =========Card start========= */
 
@@ -157,13 +202,11 @@ input {
 }
 
 .card__button {
-
   position: absolute;
   margin-top: 225px;
   background-color: white;
   padding: 17px 27px;
   border-radius: 1.3vh;
-
   color: black;
   font-family: 'Roboto';
   font-style: normal;
@@ -176,9 +219,36 @@ input {
   box-shadow: 0px 2px 20px #1BF966;
 }
 
-
-
 /* card end */
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+.qr {
+  width: 131px;
+  height: 131px;
+  position: relative;
+  border-radius: 10px;
+  margin: auto auto 25px;
+  visibility: hidden;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+#js-phone-focus {
+  cursor: pointer;
+}
+
+.phone:hover .qr {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* media */
 

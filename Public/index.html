@@ -19,18 +19,18 @@
         fill="white" />
     </svg>
 
+    <div class="spheree">
+      <div class="blue mouse-parallax"></div>
+      <div class="purple mouse-parallax"></div>
+      <div class="green mouse-parallax"></div>
+    </div>
+
     <div class="is-center">
       <form action="/bot" autocomplete="off" class="formId" method="POST">
         <fieldset class="pure-group">
           <input class="js-input-id" id="Inventory_Id" name="InventoryID" placeholder="введите Inventory ID" required />
         </fieldset>
-        <!-- <fieldset class="honeypot-field">
-          <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
-            empty
-            to submit the form! Otherwise, we assume the user is a spam bot.</label>
-          <input id="honeypot" type="text" name="honeypot" value="" />
-        </fieldset> -->
-        <button class="button-success js-button">Отправить</button>
+        <div class="buttonOff"><button class="button-success">Отправить</button></div>
       </form>
 
       <div class="card-content">
@@ -53,11 +53,12 @@
     </div>
 
     <div class="phone">
-      <img class="qr" src="img/qr-phone.png" alt="+7(968)870-91-10">
-      <a class="js-phone-focus" href="tel:+79688709110">+7 (968) 870-91-10</a>
+      <img class="qr" src="img/qrPhone.jpg" alt="+7(968)870-91-10">
+      <a id="js-phone-focus">+7 (968) 870-91-10</a>
     </div>
 
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
