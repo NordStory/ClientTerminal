@@ -1,15 +1,24 @@
 {
-  "name": "clientterminal",
+  "name": "self-service-terminal",
   "version": "1.0.0",
-  "description": "Клиентский терминал для сервисного центра",
-  "main": "index.js",
+  "description": "Терминал самообслуживания для сервисного центра с интеграцией Telegram-бота",
+  "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NordStory/ClientTerminal.git"
   },
+  "keywords": [
+    "terminal",
+    "self-service",
+    "telegram-bot",
+    "service-center",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,5 +30,11 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "node-telegram-bot-api": "^0.58.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
